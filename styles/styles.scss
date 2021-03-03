@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #1d2d50;
+    color: white;
+}
+
+p {
+    word-break: break-all;
+    white-space: normal;
+}
+
+header, footer{
+    min-height: 10vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    *{
+        flex-grow: 1;
+    }
+    h1{
+        padding: 0px 100px;
+        color: white;
+        font-family: 'Pacifico', cursive;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.second_screen{
+    width: 100%;
+    padding: 50px;
+    min-height: 100vh;
+    background-color: #fcdab7;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    .description, .image_box{
+        flex-grow: 1;
+        flex-basis: 50%;
+        margin: 10px;
+    }
+
+    .description{
+        opacity: 0;
+        transform: translateY(40px);
+        transition: 1s all ease-in-out;
+    }
+
+    .appear{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    .image_box{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+nav a:hover{
+    position: relative;
+    top: -2px;
+    left: -1px;
+}
+
+#shop{
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+    padding: 30px;
+
+    .description_shop{
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+    .bike_images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        *{
+            flex-grow: 1;
+            max-height: 100%;
+            margin: 3px;
+            max-width: 400px;
+        }
+        img:hover{
+            position: relative;
+            top: -2px;
+            left: -1px;
+            opacity: 0.7;
+        }
+    }
+}
+
+.wrapper{
+    min-height: 90vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: strecth;
+    justify-content: center;
+    *{
+        flex-grow: 1;
+    }
+    .intro{
+        text-align: center;
+        margin-top: 50px;
+        justify-self: self-end;
+    }
+    .bicycle_container{
+        align-self: center;
+        width: 50%;
+        padding: 0px 30px;
+        svg{
+            width: 100%;
+            padding: 30px;
+        }
+    }
+    .info{
+        text-align: center;
+        p{
+            font-size: 25px;
+            margin: 10px;
+        }
+        button{
+            padding: 10px 20px;
+            background-color: #fff600;
+            border: none;
+            font-weight: 400;
+            border-radius: 3px;
+        }
+    }
+}
+
+#contact{
+    background-color: black;
+    .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .options{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        *{
+            margin: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+#wheel1, #wheel2{
+    animation: wheel 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes wheel{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}

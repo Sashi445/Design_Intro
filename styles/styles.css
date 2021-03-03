@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #1d2d50;
+  color: white;
+}
+
+p {
+  word-break: break-all;
+  white-space: normal;
+}
+
+header, footer {
+  min-height: 10vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header h1 {
+  padding: 0px 100px;
+  color: white;
+  font-family: 'Pacifico', cursive;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.second_screen {
+  width: 100%;
+  padding: 50px;
+  min-height: 100vh;
+  background-color: #fcdab7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second_screen .description, .second_screen .image_box {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin: 10px;
+}
+
+.second_screen .description {
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
+}
+
+.second_screen .appear {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.second_screen .image_box img {
+  width: 100%;
+}
+
+nav a:hover {
+  position: relative;
+  top: -2px;
+  left: -1px;
+}
+
+#shop {
+  min-height: 100vh;
+  background-color: white;
+  color: black;
+  padding: 30px;
+}
+
+#shop .description_shop {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+#shop .bike_images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#shop .bike_images * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-height: 100%;
+  margin: 3px;
+  max-width: 400px;
+}
+
+#shop .bike_images img:hover {
+  position: relative;
+  top: -2px;
+  left: -1px;
+  opacity: 0.7;
+}
+
+.wrapper {
+  min-height: 90vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  -webkit-box-align: strecth;
+      -ms-flex-align: strecth;
+          align-items: strecth;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.wrapper .intro {
+  text-align: center;
+  margin-top: 50px;
+  -ms-grid-column-align: self-end;
+      justify-self: self-end;
+}
+
+.wrapper .bicycle_container {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 50%;
+  padding: 0px 30px;
+}
+
+.wrapper .bicycle_container svg {
+  width: 100%;
+  padding: 30px;
+}
+
+.wrapper .info {
+  text-align: center;
+}
+
+.wrapper .info p {
+  font-size: 25px;
+  margin: 10px;
+}
+
+.wrapper .info button {
+  padding: 10px 20px;
+  background-color: #fff600;
+  border: none;
+  font-weight: 400;
+  border-radius: 3px;
+}
+
+#contact {
+  background-color: black;
+}
+
+#contact .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+#contact .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+}
+
+#contact .options * {
+  margin: 10px;
+}
+
+#contact .options a {
+  text-decoration: none;
+  color: white;
+}
+
+#wheel1, #wheel2 {
+  -webkit-animation: wheel 1s infinite linear;
+          animation: wheel 1s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes wheel {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes wheel {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
