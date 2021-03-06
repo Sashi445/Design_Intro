@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header, footer{
+    min-height: 10vh;
+    text-align: center;
+    padding: 20px;
+    background-color: #ff9900;
+}
+
+
+.image_viewer{
+    position: absolute;
+    height: 100vh;
+    top: 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+.image_viewer #close{
+    align-self: flex-end;
+    font-size: 30px;
+}
+
+.image_viewer *{
+    opacity: 1;
+}
+
+.image_viewer img{
+    height: 80%;
+    object-fit: scale-down;
+}
+
+main{
+    min-height: 90vh;
+}
+
+.product_design, .graphic_design, .ui_design, .ux_design, .logo_design{
+    min-height: 90vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.product_design h2, .graphic_design h2, .ui_design h2, .ux_design h2, .logo_design h2{
+    margin: 15px 0px;
+}
+
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.images *{
+    flex-grow: 1;
+    max-width: 20%;
+    object-fit: cover;
+    margin: 3px;
+}
+
+.images img:hover{
+    opacity: 0.7;
+}
+
+
